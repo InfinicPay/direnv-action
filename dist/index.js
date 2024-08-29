@@ -63084,6 +63084,7 @@ async function exportEnvrc() {
   const options = {};
   options.listeners = {
     stdout: (data) => {
+      core.info('got data....');
       outputBuffer += data.toString();
     }
   };
