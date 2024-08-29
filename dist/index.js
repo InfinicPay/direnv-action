@@ -63089,8 +63089,9 @@ async function exportEnvrc() {
   };
   options.silent = true;
 
-  core.info('exporting envrc...');
+  core.info('exporting envrc....');
   await exec.exec(`direnv`, ['export', 'json'], options);
+  core.info('exporting envrc done....');
   return JSON.parse(outputBuffer);
 }
 

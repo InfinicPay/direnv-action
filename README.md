@@ -5,13 +5,13 @@
 
 # direnv action
 
-> Privides environment variables via direnv
+> Provides environment variables via direnv
 
 This action provides environment variables via [direnv](https://direnv.net/),
 
 ## Inputs
 
-- `direnvVersion`: The version of direnv to use. Default: `2.32.1`
+- `direnvVersion`: The version of direnv to use. Default: `2.34.0`
 - `masks`: Comma seprated list of environment variables to mask. Default: `''`
 
 ## Outputs
@@ -23,7 +23,7 @@ No outputs
 ```yaml
 uses: HatsuneMiku3939/direnv-action@v1
 with:
-  direnvVersion: 2.32.1
+  direnvVersion: 2.34.0
   masks: SECRET1, SECRET2
 ```
 
